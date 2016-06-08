@@ -38,7 +38,7 @@
                         <configuration>
                             <archive>
                                 <manifestEntries>
-                                    <premain-class>org.tiger.agent.Agent</premain-class>
+                                    <premain-class>org.tiger.agent.premain.Agent</premain-class>
                                 </manifestEntries>
                             </archive>
                         </configuration>

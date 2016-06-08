@@ -1,7 +1,7 @@
 package org.tiger.test;
 
 import org.junit.Test;
-import org.tiger.agent.Sleeping;
+import org.tiger.agent.premain.Sleeping;
 
 /**
  * Created by tiger on 16-6-7.

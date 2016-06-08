@@ -1,4 +1,4 @@
-package org.tiger.agent;
+package org.tiger.agent.premain;
 
 import javassist.*;
 
@@ -16,8 +16,8 @@ public class SleepingClassFileTransformer implements ClassFileTransformer {
 
     public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain,
                             byte[] classfileBuffer) throws IllegalClassFormatException {
-        String jvmClassFullName = "org/tiger/agent/Sleeping";
-        String classFullName = "org.tiger.agent.Sleeping";
+        String jvmClassFullName = "org/tiger/agent/premain/Sleeping";
+        String classFullName = "org.tiger.agent.premain.Sleeping";
 
         byte[] byteCode = classfileBuffer;
         if(className.equals(jvmClassFullName)){
